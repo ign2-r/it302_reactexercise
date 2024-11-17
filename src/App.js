@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import MyNavigationBar from './MyNavigationBar';
+import Container from 'react-bootstrap/Container';
+import CheckOutForm from './CheckOutForm';
+// Rockwell Dela Rosa, IT302-451, Unit 10 React.js Exercise, rmd2@njit.edu
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyNavigationBar />
+      <Container>
+        <CheckOutForm />
+      </Container>
     </div>
   );
 }

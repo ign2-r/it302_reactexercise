@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter } from 'react-router-dom';
+// Rockwell Dela Rosa, IT302-451, Unit 10 React.js Exercise, rmd2@njit.edu
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/rmd2">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
